@@ -5,12 +5,11 @@ $(function($) {
 
     var view;
 
-    $(document).on("webworksready", function() {
+    document.addEventListener("webworksready", function() {
         var ele = document.createElement("div");
         ele.innerHTML = "uuid: " + blackberry.identity.uuid;
         document.documentElement.appendChild(ele);
-        console.log("initbb");
-    });
+    }, false);
     
     view = new app.AppView({
     });
