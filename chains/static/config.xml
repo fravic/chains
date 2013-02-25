@@ -19,7 +19,7 @@
   
   <icon src="img/icon-150.png"/>
     
-  <content src="index.html" rim:allowInvokeParams="true"/>
+  <content src="http://dontbreakthechain.herokuapp.com/static/index.html" rim:allowInvokeParams="true"/>
   
   <feature id="blackberry.ui.dialog"/>
   
@@ -31,7 +31,7 @@
     <param name="backgroundColor" value="0xFFFF0000" />
   </feature>
   
-  <access uri="http://www.somedomain.com" subdomains="true">
+  <access uri="http://dontbreakthechain.herokuapp.com" subdomains="true">
     <feature id="blackberry.app" required="true" version="1.0.0"/>
     <feature id="blackberry.invoke" required="true" version="1.0.0"/>
   </access>
