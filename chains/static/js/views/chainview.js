@@ -56,7 +56,6 @@ $(function($) {
                 name: $("input[name='name']", form).val(),
                 stakes: $("input[name='stakes']", form).val()
             });
-            console.log(c);
             this.set.add(c);
             c.save();
 

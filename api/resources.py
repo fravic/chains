@@ -1,3 +1,4 @@
+from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource, fields
 
 from chains.models import Chain, X
@@ -12,3 +13,4 @@ class ChainResource(ModelResource):
     class Meta:
         queryset = Chain.objects.all()
         allowed_methods = ('post', 'get',)
+        authorization = Authorization()
