@@ -44,13 +44,18 @@ BUTTON {
   padding: 20px 80px;
   }
 
+FORM .field {
+  font-weight: bold;
+  margin-bottom: 40px;
+  width: 100%;
+  }
+
 INPUT {
   .box-sizing(border-box);
   .rounded(6px);
 
   background: white;
   border: 3px solid @lightGray;
-  float: right;
   font-size: @med;
   min-height: 40px;
   padding: 0 15px;
@@ -128,10 +133,4 @@ LABEL {
   position: absolute;
   top: 0;
   width: @screenWidth;
-
-  .field {
-    font-weight: bold;
-    margin-bottom: 40px;
-    width: 100%;
-    }
   }
