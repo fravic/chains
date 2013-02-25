@@ -8,9 +8,9 @@
 @lightBlue: #83baff;
 @circleColor: rgba(150, 150, 150, 0.75);
 
-@large: 50px;
-@med: 25px;
-@small: 18px;
+@large: 70px;
+@med: 50px;
+@small: 30px;
 
 HTML, BODY {
   background: url('../img/pw_maze_black.png');
@@ -22,14 +22,14 @@ HTML, BODY {
 
 H1 {
   color: @lightBlue;
-  float: left;
   font-weight: lighter;
   font-size: @large;
+  padding: 50px 0;
+  text-align: center;
   }
 
 NAV {
   margin-bottom: 50px;
-  padding: 50px 0;
   }
 
 BUTTON {
@@ -37,14 +37,15 @@ BUTTON {
 
   background: white;
   border: none;
-  display: inline-block;
+  display: block;
   font-family: Helvetica, sans-serif;
   font-size: @small;
   font-weight: bold;
-  padding: 10px 60px;
+  padding: 20px 80px;
   }
 
 INPUT {
+  .box-sizing(border-box);
   .rounded(6px);
 
   background: white;
@@ -52,8 +53,8 @@ INPUT {
   float: right;
   font-size: @med;
   min-height: 40px;
-  min-width: 450px;
-  padding: 0 10px;
+  padding: 0 15px;
+  width: 100%;
   }
 
 INPUT[type='submit'] {
@@ -63,13 +64,14 @@ INPUT[type='submit'] {
   }
 
 LABEL {
+  display: block;
   font-size: @med;
-  float: left;
-  margin-top: 10px;
+  margin: 0 0 15px 0;
+  width: 100%;
   }
 
 #btn_new {
-  float: right;
+  margin: 0 auto;
   }
 
 #container {
@@ -126,7 +128,7 @@ LABEL {
 
   .field {
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 100%;
     }
   }
