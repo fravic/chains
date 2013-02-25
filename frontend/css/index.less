@@ -1,10 +1,13 @@
+@screenWidth: 768px;
+@screenHeight: 1280px;
+
 HTML, BODY {
   margin: 0;
   padding: 0;
   }
 
 #container {
-  width: 480px;
+  width: @screenWidth;
   }
 
 .template {
@@ -14,5 +17,15 @@ HTML, BODY {
 .chain {
   background-color: red;
   height: 100px;
-  width: 460px;
+  padding: 0 20px;
+  width: @screenWidth;
+  }
+
+#new_chain {
+  display: none;
+  left: 0;
+  position: absolute;
+  height: @screenHeight;
+  top: 0;
+  width: @screenWidth;
   }

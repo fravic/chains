@@ -21,10 +21,23 @@
     <div id="container">
       <nav>
         <h1>Don't Break the Chain!</h1>
-        <button>New Chain</button>
-        <button>Delete Chain</button>
+        <button id="btn_new">New Chain</button>
       </nav>
       <div id="chains">
+      </div>
+      <div id="new_chain">
+        <form>
+          <input name="name"></input>
+          <input name="verifier"></input>
+          <input name="pay"></input>
+          <input type="radio" name="days" value="0">Sun</input>
+          <input type="radio" name="days" value="1">Mon</input>
+          <input type="radio" name="days" value="2">Tue</input>
+          <input type="radio" name="days" value="3">Wed</input>
+          <input type="radio" name="days" value="4">Thu</input>
+          <input type="radio" name="days" value="5">Fri</input>
+          <input type="radio" name="days" value="6">Sat</input>
+        </form>
       </div>
     </div>
     <div class="chain template">
