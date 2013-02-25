@@ -1,5 +1,6 @@
 @screenWidth: 768px;
 @screenHeight: 1280px;
+@circleWidth: 80px;
 
 HTML, BODY {
   margin: 0;
@@ -19,6 +20,22 @@ HTML, BODY {
   height: 100px;
   padding: 0 20px;
   width: @screenWidth;
+
+  .circle {
+    border-radius: @circleWidth/2;
+    -moz-border-radius:@circleWidth/2;
+    -webkit-border-radius: @circleWidth/2;
+
+    background-color: white;
+    float: left;
+    height: @circleWidth;
+    margin-right: 10px;
+    width: @circleWidth;
+    }
+
+  .circle.complete {
+    background-color: black;
+    }
   }
 
 #new_chain {

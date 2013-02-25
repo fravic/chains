@@ -7,6 +7,11 @@ $(function($) {
         initialize: function(a) {
             this.name = a["name"];
             this.pay = a["pay"];
+            this.completeDays = a["complete"];
+        },
+
+        isDayComplete: function(d) {
+            return this.completeDays[d];
         }
     });
 });
