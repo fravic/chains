@@ -85,6 +85,7 @@ LABEL {
 
 .chain {
   font-size: @med;
+  margin-bottom: 50px;
   width: @screenWidth;
 
   .header {
@@ -103,16 +104,17 @@ LABEL {
     }
 
   .circle {
-    background: url('../img/circle_x.png');
+    background: url('../img/circle_nox.png');
     background-size: 80px 80px;
     float: left;
     height: @circleWidth;
-    margin-right: 10px;
+    margin-right: 15px;
     width: @circleWidth;
     }
 
   .circle.complete {
-    background-color: black;
+    background: url('../img/circle_x.png');
+    background-size: 80px 80px;
     }
   }
 

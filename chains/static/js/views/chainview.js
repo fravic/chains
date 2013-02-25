@@ -4,7 +4,7 @@ $(function($) {
     'use strict';
 
     app.ChainsView = Backbone.View.extend({
-        NUM_CIRCLES_TO_DISPLAY: 6,
+        NUM_CIRCLES_TO_DISPLAY: 7,
 
         initialize: function(a) {
             _.bindAll(this);
@@ -12,12 +12,16 @@ $(function($) {
             this.set = a["set"];
             this.set.on("add", this.addChain);
             this.set.on("remove", this.removeChain);
-            _.each(this.set.models, this.addChain);
+            this.set.fetch({success: this.chainsFetched});
             
             $("#btn_new").on("click", this.btnNewChain);
         },
 
-        addChain: function(chain, idx) {
+        chainsFetched: function() {
+            this.set.map(this.addChain);
+        },
+
+        addChain: function(chain) {
             var newChain, today;
 
             newChain = $(".chain.template").clone();
@@ -25,10 +29,12 @@ $(function($) {
             $(".name", newChain).html(chain.name);
             $(".stakes", newChain).html("$" + chain.stakes);
 
-            today = app.utils.daysSinceEpoch();
-            for (var d = today; d >= today - this.NUM_CIRCLES_TO_DISPLAY; d--) {
-                this.addCircle(newChain, chain, d);
-            }
+            today = new Date();
+            today.setHours(0, 0, 0, 0); // Want date without time
+            _(this.NUM_CIRCLES_TO_DISPLAY).times(_.bind(function(d) {
+                today.setDate(today.getDate() - 1);
+                this.addCircle(newChain, chain, today);
+            }, this));
 
             $("#chains").append(newChain);
         },
@@ -43,16 +49,19 @@ $(function($) {
         },
 
         createNewChain: function(e) {
-            e.preventDefault();
+            var c, form;
 
-            console.log("create new chain");
-            var c = new app.Chain({
-                name: $("#name").val(),
-                stakes: $("#stakes").val()
+            form = $("#new_chain form");
+            c = new app.Chain({
+                name: $("input[name='name']", form).val(),
+                stakes: $("input[name='stakes']", form).val()
             });
+            console.log(c);
             this.set.add(c);
             c.save();
 
+            $("#new_chain").fadeOut();
+            e.preventDefault();
             return false;
         },
 

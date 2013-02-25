@@ -5,6 +5,6 @@ $(function($) {
 
     app.ChainSet = Backbone.Collection.extend({
         model: app.Chain,
-        url: 'http://dontbreakthechain.herokuapp.com/api/v1/chain?format=json',
+        url: '/api/v1/chain',
     });
 });

@@ -6,10 +6,6 @@ $(function($) {
     // Set up utilities
     app.utils = {
         SECONDS_PER_DAY: 86400,
-        daysSinceEpoch: function() {
-            var t = (new Date()).getTime();
-            return Math.floor(t / this.SECONDS_PER_DAY);
-        }
     }
 
     var chainSet, view;
@@ -20,10 +16,7 @@ $(function($) {
         document.documentElement.appendChild(ele);
     }, false);
     
-    chainSet = new app.ChainSet([
-        {name: "Go to the Gym", stakes: 1}
-    ]);
-
+    chainSet = new app.ChainSet;
     view = new app.ChainsView({
         set: chainSet
     });
