@@ -72,6 +72,9 @@ $(function($) {
                 newCircle.addClass("complete");
             }
             $(".circles", e).append(newCircle);
-        }
+        },
+
+        markX: function(e) {
+        },
     });
 });
