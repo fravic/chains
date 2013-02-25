@@ -6,6 +6,7 @@
 
 @lightGray: #aaaaaa;
 @lightBlue: #83baff;
+@circleColor: rgba(150, 150, 150, 0.75);
 
 @large: 50px;
 @med: 25px;
@@ -77,8 +78,9 @@ BUTTON {
 
   .circle {
     .rounded(@circleWidth/2);
+    .inner-shadow(3px, 6px, 2px, 0.5);
 
-    background-color: white;
+    background-color: @circleColor;
     float: left;
     height: @circleWidth;
     margin-right: 10px;
