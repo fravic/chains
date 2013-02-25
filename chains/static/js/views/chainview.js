@@ -22,18 +22,15 @@ $(function($) {
         },
 
         addChain: function(chain) {
-            var newChain, today;
+            var newChain;
 
             newChain = $(".chain.template").clone();
             newChain.removeClass("template");
             $(".name", newChain).html(chain.name);
             $(".stakes", newChain).html("$" + chain.stakes);
 
-            today = new Date();
-            today.setHours(0, 0, 0, 0); // Want date without time
             _(this.NUM_CIRCLES_TO_DISPLAY).times(_.bind(function(d) {
-                today.setDate(today.getDate() - 1);
-                this.addCircle(newChain, chain, today);
+                this.addCircle(newChain, chain, Date.today().add(-d).days());
             }, this));
 
             $("#chains").append(newChain);
@@ -70,10 +67,18 @@ $(function($) {
             if (chain.isDayComplete(d)) {
                 newCircle.addClass("complete");
             }
+            newCircle.data("chain", chain);
+            newCircle.data("day", d);
+            newCircle.click(this.markX);
             $(".circles", e).append(newCircle);
         },
 
         markX: function(e) {
+            var chain, circle;
+            circle = $(e.target);
+            chain = circle.data("chain");
+            circle.toggleClass("complete");
+            chain.toggleDayComplete(circle.data("day"));
         },
     });
 });

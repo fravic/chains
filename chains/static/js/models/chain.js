@@ -13,10 +13,21 @@ $(function($) {
 
         isDayComplete: function(d) {
             return _.find(this.xs, function(xd) {
-                var xdate = new Date(xd.day);
-                xdate.setHours(0, 0, 0, 0); // Want date without time
-                return xdate.getTime() == d.getTime();
+                var xdate = new Date(xd.day).clearTime();
+                return xdate.equals(d);
             });
-        }
+        },
+
+        toggleDayComplete: function(d) {
+            /* TODO: MAKE THIS WORK
+            var x;
+            if (x = this.isDayComplete(d)) {
+                this.xs.remove(x);
+            } else {
+                x = {id: 2, day: d.toString("yyyy-MM-dd")};
+                this.xs.push(x);
+                this.save();
+            }*/
+        },
     });
 });
