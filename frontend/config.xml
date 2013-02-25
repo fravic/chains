@@ -17,11 +17,8 @@
     <rim:permit>use_camera</rim:permit>  
   </rim:permissions>
   
-  <icon src="icons/icon-150.png"/>
-  
-  <rim:splash src="splash-1280x768.png"/>
-  <rim:splash src="splash-768x1280.png"/>
-  
+  <icon src="img/icon-150.png"/>
+    
   <content src="index.html" rim:allowInvokeParams="true"/>
   
   <feature id="blackberry.ui.dialog"/>
