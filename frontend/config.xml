@@ -36,6 +36,4 @@
     <feature id="blackberry.invoke" required="true" version="1.0.0"/>
   </access>
   
-  <license href="http://www.example.com/"/>
-  
 </widget>

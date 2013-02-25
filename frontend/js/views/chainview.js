@@ -38,9 +38,16 @@ $(function($) {
         },
 
         btnNewChain: function() {
-            var c = new app.Chain({ name: $("#name").val(), pay: $("#pay").val() });
-            c.save();
             $("#new_chain").show();
+            $("#new_chain input[type='submit']").click(this.createNewChain);
+        },
+
+        createNewChain: function() {
+            var c = new app.Chain({
+                name: $("#name").val(),
+                pay: $("#pay").val()
+            });
+            c.save();
         },
 
         addCircle: function(e, chain, d) {

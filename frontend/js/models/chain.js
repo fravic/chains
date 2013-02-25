@@ -4,7 +4,6 @@ $(function($) {
     'use strict';
 
     app.Chain = Backbone.Model.extend({
-        url: "/chain/", 
         initialize: function(a) {
             this.name = a["name"];
             this.pay = a["pay"];
