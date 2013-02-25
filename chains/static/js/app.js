@@ -21,7 +21,7 @@ $(function($) {
     }, false);
     
     chainSet = new app.ChainSet([
-        {name: "Go to the Gym", pay: 1, complete:{}}
+        {name: "Go to the Gym", stakes: 1}
     ]);
 
     view = new app.ChainsView({

@@ -23,7 +23,7 @@ $(function($) {
             newChain = $(".chain.template").clone();
             newChain.removeClass("template");
             $(".name", newChain).html(chain.name);
-            $(".pay", newChain).html("$" + chain.pay);
+            $(".stakes", newChain).html("$" + chain.stakes);
 
             today = app.utils.daysSinceEpoch();
             for (var d = today; d >= today - this.NUM_CIRCLES_TO_DISPLAY; d--) {
@@ -39,15 +39,21 @@ $(function($) {
 
         btnNewChain: function() {
             $("#new_chain").show();
-            $("#new_chain input[type='submit']").click(this.createNewChain);
+            $("#new_chain form").submit(this.createNewChain);
         },
 
-        createNewChain: function() {
+        createNewChain: function(e) {
+            e.preventDefault();
+
+            console.log("create new chain");
             var c = new app.Chain({
                 name: $("#name").val(),
-                pay: $("#pay").val()
+                stakes: $("#stakes").val()
             });
+            this.set.add(c);
             c.save();
+
+            return false;
         },
 
         addCircle: function(e, chain, d) {

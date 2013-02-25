@@ -19,16 +19,12 @@
   
   <icon src="img/icon-150.png"/>
     
-  <content src="http://dontbreakthechain.herokuapp.com/static/index.html" rim:allowInvokeParams="true"/>
+  <content src="http://dontbreakthechain.herokuapp.com/static/index.html" />
   
   <feature id="blackberry.ui.dialog"/>
   
   <feature id="blackberry.app.orientation">
     <param name="mode" value="portrait" />
-  </feature>
-  
-  <feature id="blackberry.app">
-    <param name="backgroundColor" value="0xFFFF0000" />
   </feature>
   
   <access uri="http://dontbreakthechain.herokuapp.com" subdomains="true">
