@@ -1,0 +1,51 @@
+var app = app || {};
+
+$(function($) {
+    'use strict';
+
+    app.ChainsView = Backbone.View.extend({
+        initialize: function(a) {
+            _.bindAll(this);
+
+            this.set = a["set"];
+            this.set.on("add", this.addChain);
+            this.set.on("remove", this.removeChain);
+            _.each(this.set.models, this.addChain);
+            
+            $("#btn_new").on("click", this.btnNewChain);
+        },
+
+        addChain: function(chain, idx) {
+            var newChain, today;
+
+            newChain = $(".chain.template").clone();
+            newChain.removeClass("template");
+            $(".name", newChain).html(chain.name);
+            $(".name", newChain).html("$" + chain.pay);
+
+            today = app.utils.daysSinceEpoch();
+            for (var d = today; d >= today - 10; d--) {
+                this.addCircle(newChain, chain, d);
+            }
+
+            $("#chains").append(newChain);
+        },
+
+        removeChain: function(chain) {
+            $("#chains .chain").remove();
+        },
+
+        btnNewChain: function() {
+            $("#new_chain").show();
+        },
+
+        addCircle: function(e, chain, d) {
+            var newCircle = $("<DIV>");
+            newCircle.addClass("circle");
+            if (chain.isDayComplete(d)) {
+                newCircle.addClass("complete");
+            }
+            $(".circles", e).append(newCircle);
+        }
+    });
+});
