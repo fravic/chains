@@ -28,16 +28,19 @@
       </div>
       <div id="new_chain">
         <form>
-          <input name="name"></input>
-          <input name="verifier"></input>
-          <input name="pay"></input>
-          <input type="radio" name="days" value="0">Sun</input>
-          <input type="radio" name="days" value="1">Mon</input>
-          <input type="radio" name="days" value="2">Tue</input>
-          <input type="radio" name="days" value="3">Wed</input>
-          <input type="radio" name="days" value="4">Thu</input>
-          <input type="radio" name="days" value="5">Fri</input>
-          <input type="radio" name="days" value="6">Sat</input>
+          <div class="field clearfix">
+            <label>Name</label>
+            <input name="name">
+          </div>
+          <div class="field clearfix">
+            <label>Verifier Email</label>
+            <input name="verifier">
+          </div>
+          <div class="field clearfix">
+            <label>Breaking Payment</label>
+            <input name="pay">
+          </div>
+          <input type="submit">
         </form>
       </div>
     </div>

@@ -36,12 +36,36 @@ BUTTON {
   .rounded(6px);
 
   background: white;
-  border: 1px solid white;
+  border: none;
   display: inline-block;
   font-family: Helvetica, sans-serif;
   font-size: @small;
   font-weight: bold;
   padding: 10px 60px;
+  }
+
+INPUT {
+  .rounded(6px);
+
+  background: white;
+  border: 3px solid @lightGray;
+  float: right;
+  font-size: @med;
+  min-height: 40px;
+  min-width: 450px;
+  padding: 0 10px;
+  }
+
+INPUT[type='submit'] {
+  border: none;
+  font-weight: bold;
+  min-width: 200px;
+  }
+
+LABEL {
+  font-size: @med;
+  float: left;
+  margin-top: 10px;
   }
 
 #btn_new {
@@ -93,10 +117,16 @@ BUTTON {
   }
 
 #new_chain {
+  background: rgba(0, 0, 0, 0.9);
   display: none;
-  left: 0;
+  padding: 100px 20px;
   position: absolute;
-  height: @screenHeight;
   top: 0;
   width: @screenWidth;
+
+  .field {
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    }
   }
