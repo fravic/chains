@@ -3,7 +3,7 @@ var app = app || {};
 $(function($) {
     'use strict';
 
-    var view;
+    var chainSet, view;
 
     document.addEventListener("webworksready", function() {
         var ele = document.createElement("div");
@@ -11,6 +11,11 @@ $(function($) {
         document.documentElement.appendChild(ele);
     }, false);
     
-    view = new app.AppView({
+    chainSet = new app.ChainSet([
+        {name: "Go to the Gym", pay: 1}
+    ]);
+
+    view = new app.ChainsView({
+        set: chainSet
     });
 });
