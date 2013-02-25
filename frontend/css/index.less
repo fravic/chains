@@ -1,13 +1,54 @@
+@import "elements.less";
+
 @screenWidth: 768px;
 @screenHeight: 1280px;
 @circleWidth: 80px;
 
+@lightGray: #aaaaaa;
+@lightBlue: #83baff;
+
+@large: 50px;
+@med: 25px;
+@small: 18px;
+
 HTML, BODY {
+  background: url('../img/pw_maze_black.png');
+  color: white;
+  font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   }
 
+H1 {
+  color: @lightBlue;
+  float: left;
+  font-weight: lighter;
+  font-size: @large;
+  }
+
+NAV {
+  margin-bottom: 50px;
+  padding: 50px 0;
+  }
+
+BUTTON {
+  .rounded(6px);
+
+  background: white;
+  border: 1px solid white;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: @small;
+  font-weight: bold;
+  padding: 10px 60px;
+  }
+
+#btn_new {
+  float: right;
+  }
+
 #container {
+  margin: 0 auto;
   width: @screenWidth;
   }
 
@@ -16,15 +57,26 @@ HTML, BODY {
   }
 
 .chain {
-  background-color: red;
-  height: 100px;
-  padding: 0 20px;
+  font-size: @med;
   width: @screenWidth;
 
+  .header {
+    margin: 15px 0;
+    }
+
+  .name {
+    font-weight: bold;
+    float: left;
+    margin-right: 20px;
+    }
+
+  .pay {
+    color: @lightGray;
+    float: left;
+    }
+
   .circle {
-    border-radius: @circleWidth/2;
-    -moz-border-radius:@circleWidth/2;
-    -webkit-border-radius: @circleWidth/2;
+    .rounded(@circleWidth/2);
 
     background-color: white;
     float: left;

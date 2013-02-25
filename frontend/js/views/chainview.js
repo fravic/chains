@@ -4,6 +4,8 @@ $(function($) {
     'use strict';
 
     app.ChainsView = Backbone.View.extend({
+        NUM_CIRCLES_TO_DISPLAY: 6,
+
         initialize: function(a) {
             _.bindAll(this);
 
@@ -21,10 +23,10 @@ $(function($) {
             newChain = $(".chain.template").clone();
             newChain.removeClass("template");
             $(".name", newChain).html(chain.name);
-            $(".name", newChain).html("$" + chain.pay);
+            $(".pay", newChain).html("$" + chain.pay);
 
             today = app.utils.daysSinceEpoch();
-            for (var d = today; d >= today - 10; d--) {
+            for (var d = today; d >= today - this.NUM_CIRCLES_TO_DISPLAY; d--) {
                 this.addCircle(newChain, chain, d);
             }
 
