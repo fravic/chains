@@ -38,6 +38,8 @@ $(function($) {
         },
 
         btnNewChain: function() {
+            var c = new app.Chain({ name: $("#name").val(), pay: $("#pay").val() });
+            c.save();
             $("#new_chain").show();
         },
 
