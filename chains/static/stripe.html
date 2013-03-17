@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" id="viewport" content="initial-scale=0.4,user-scalable=no" />
+
+    <title>Payment Information</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+</head>
+
+<form action="" method="POST" id="payment-form">
+  <div class="form-row">
+    <label>
+      <span>Card Number</span>
+      <input type="text" size="20" autocomplete="off" class="card-number"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>CVC</span>
+      <input type="text" size="4" autocomplete="off" class="card-cvc"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>Expiration (MM/YYYY)</span>
+      <input type="text" size="2" class="card-expiry-month"/>
+    </label>
+    <span> / </span>
+    <input type="text" size="4" class="card-expiry-year"/>
+  </div>
+
+  <button type="submit" class="submit-button">Submit Payment</button>
+</form>
+</html>
