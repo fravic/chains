@@ -1,0 +1,1453 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fir",
+				"first_user_task_tid"
+			],
+			[
+				"pass",
+				"Passing"
+			],
+			[
+				"new",
+				"new_wakeup"
+			],
+			[
+				"ty",
+				"typedef"
+			],
+			[
+				"tid_to",
+				"tid_to_unblock"
+			],
+			[
+				"wake",
+				"wakeup_time"
+			],
+			[
+				"wa",
+				"wakeup_time"
+			],
+			[
+				"ti",
+				"ticks"
+			],
+			[
+				"DB",
+				"DBG_SYS"
+			],
+			[
+				"rep",
+				"reply_msg"
+			],
+			[
+				"req",
+				"request_msg"
+			],
+			[
+				"re",
+				"reply_msg"
+			],
+			[
+				"ret",
+				"ret"
+			],
+			[
+				"r0",
+				"r0"
+			],
+			[
+				"Inte",
+				"interrupt"
+			],
+			[
+				"uni",
+				"unsigned"
+			],
+			[
+				"D",
+				"DBG_KERN"
+			],
+			[
+				"DBG_",
+				"DBG_CURR_LVL"
+			],
+			[
+				"DBG",
+				"DBG_CURR_LVL"
+			],
+			[
+				"SRC",
+				"SRC_DIRS"
+			],
+			[
+				"sende",
+				"sender_tid"
+			],
+			[
+				"pla",
+				"player_one"
+			],
+			[
+				"playr",
+				"players_queue"
+			],
+			[
+				"get",
+				"get_time"
+			],
+			[
+				"nex",
+				"next_move"
+			],
+			[
+				"star",
+				"start_timer"
+			],
+			[
+				"rec",
+				"receive_queue"
+			],
+			[
+				"Rece",
+				"receive_queue"
+			],
+			[
+				"msg_",
+				"msg_info"
+			],
+			[
+				"Recei",
+				"receive_info"
+			],
+			[
+				"msg",
+				"msg"
+			],
+			[
+				"Me",
+				"Message_info"
+			],
+			[
+				"M",
+				"Message_info"
+			],
+			[
+				"ms",
+				"msg_infos"
+			],
+			[
+				"reply",
+				"reply_buf"
+			],
+			[
+				"Na",
+				"NAMESERVER_TABLE_MAX_SIZE"
+			],
+			[
+				"N",
+				"NAMESERVER_REGISTER_REQUEST"
+			],
+			[
+				"td",
+				"td_ptrs"
+			],
+			[
+				"init",
+				"init_schedule"
+			],
+			[
+				"Tas",
+				"Task_descriptor"
+			],
+			[
+				"sc",
+				"sched"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"Ke",
+				"KERN_GLOBALS"
+			],
+			[
+				"sh",
+				"Schedule"
+			],
+			[
+				"tas",
+				"tasks"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"pri",
+				"priority"
+			],
+			[
+				"swit",
+				"switch_states"
+			],
+			[
+				"swi",
+				"switch_states"
+			],
+			[
+				"tra",
+				"train_speeds"
+			],
+			[
+				"COM",
+				"COM1"
+			],
+			[
+				"SE",
+				"SENSOR_CELAR_TIME"
+			],
+			[
+				"my",
+				"my_strcpy"
+			],
+			[
+				"ter",
+				"term_buf"
+			],
+			[
+				"cha",
+				"characters"
+			],
+			[
+				"train",
+				"train_buf"
+			],
+			[
+				"print",
+				"printf	printf …"
+			],
+			[
+				"str",
+				"strcpy"
+			],
+			[
+				"com",
+				"command"
+			],
+			[
+				"set",
+				"setwordsize"
+			],
+			[
+				"CLI",
+				"CLI_HISTORY_LEN"
+			],
+			[
+				"Cli",
+				"Cli_history"
+			],
+			[
+				"cli",
+				"Cli_history"
+			],
+			[
+				"char",
+				"char"
+			],
+			[
+				"Re",
+				"Recieve_buf"
+			],
+			[
+				"ch",
+				"ch"
+			],
+			[
+				"UAR",
+				"UART_BUF_SIZE"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"array_f",
+				"array_filter"
+			],
+			[
+				"input",
+				"input	input - password"
+			],
+			[
+				"jo",
+				"json_a"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"border-bot",
+				"border-bottom-style"
+			],
+			[
+				"border-bo",
+				"border-bottom-color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"spa",
+				"span	Tag"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"la",
+				"last-child"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"s",
+				"super"
+			],
+			[
+				"bold",
+				"bold"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"link",
+				"link1"
+			],
+			[
+				"remove",
+				"remove_duplicates"
+			],
+			[
+				"href",
+				"href_target"
+			],
+			[
+				"curl_er",
+				"curl_error_msg"
+			],
+			[
+				"curl",
+				"curl_options"
+			],
+			[
+				"fou",
+				"links_found"
+			],
+			[
+				"fet",
+				"fetch_links"
+			],
+			[
+				"row",
+				"row_count"
+			],
+			[
+				"parse",
+				"parse_dom"
+			],
+			[
+				"cu",
+				"curl_error"
+			],
+			[
+				"reson",
+				"reason"
+			],
+			[
+				"cURL",
+				"cURL"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"link_",
+				"links_found"
+			],
+			[
+				"num",
+				"num_links"
+			],
+			[
+				"con",
+				"contractor"
+			],
+			[
+				"print_",
+				"print_r"
+			],
+			[
+				"target",
+				"target_domain"
+			],
+			[
+				"el",
+				"elseif	elseif …"
+			],
+			[
+				"url",
+				"urlorlink"
+			],
+			[
+				"dom",
+				"target_domain"
+			],
+			[
+				"targ",
+				"target_domain"
+			],
+			[
+				"fe",
+				"fetch_links"
+			],
+			[
+				"par",
+				"parse_url"
+			],
+			[
+				"parse_",
+				"parse_dom"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"chek",
+				"check_curl_results"
+			],
+			[
+				"curl_ha",
+				"curl_handler"
+			],
+			[
+				"sta",
+				"status_code"
+			],
+			[
+				"tar",
+				"target_html"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n   <title>Hello World</title>\n\n   <link rel=\"stylesheet/less\" type=\"text/css\" href=\"css/index.less\" />\n\n   <script src=\"local:///chrome/webworks.js\" type=\"text/javascript\"></script>\n   <script src=\"js/lib/jquery.min.js\" type=\"text/javascript\"></script>\n   <script src=\"js/lib/underscore.min.js\" type=\"text/javascript\"></script>\n   <script src=\"js/lib/backbone.min.js\" type=\"text/javascript\"></script>\n   <script src=\"js/lib/less.min.js\" type=\"text/javascript\"></script>\n\n   <script src=\"js/views/appview.js\" type=\"text/javascript\"></script>\n   <script src=\"js/models/chain.js\" type=\"text/javascript\"></script>\n   <script src=\"js/collections/chains.js\" type=\"text/javascript\"></script>\n   <script src=\"js/app.js\" type=\"text/javascript\"></script>\n   <script>\n      function ready() {\n         var ele = document.createElement(\"div\");\n         ele.innerHTML = \"uuid: \" + blackberry.identity.uuid;\n         document.documentElement.appendChild(ele);\n      console.log(\"traditional\");\n      }\n      window.addEventListener(\"load\", function(e) {\n         document.addEventListener(\"webworksready\", ready);\n      }, false);\n   </script>\n</head>\n<body>\n  <div id=\"container\">\n    <p>Hello World</p>\n  </div>\n</body>\n</html>\n",
+			"file": "index.html",
+			"file_size": 1317,
+			"file_write_time": 1361606983000000,
+			"settings":
+			{
+				"buffer_size": 1317,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/install-from-mac.sublime-build",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"git ci",
+				"Git: Commit"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"git ush",
+				"Git: Push"
+			],
+			[
+				"git ci ",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git cus",
+				"Git: Custom Command"
+			],
+			[
+				"GIT cus",
+				"Git: Custom Command"
+			],
+			[
+				"git ",
+				"Git: Gitk"
+			],
+			[
+				"git add ..",
+				"Git: Add..."
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"forman",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indent XML"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"clang",
+				"Preferences: SublimeClang Settings – User"
+			],
+			[
+				":inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				":$",
+				":$ - EOF"
+			],
+			[
+				":instal",
+				"Package Control: Install Package"
+			],
+			[
+				":install",
+				"Package Control: Install Package"
+			],
+			[
+				":insta",
+				"Package Control: Install Package"
+			],
+			[
+				":INSTAL	",
+				"Package Control: Install Package"
+			],
+			[
+				":indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				":json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				":insat",
+				"Preferences: Settings - Default"
+			],
+			[
+				":pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				":pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 111.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rpavlovs/vanin_sajt/Welcome to Jazzamuse - Jazzamuse dot com.html",
+		"/Users/rpavlovs/Downloads/58869 (1).user.js",
+		"/Users/rpavlovs/Downloads/B10 PC Configurator/Driver/ReleaseNotes.txt",
+		"/Users/rpavlovs/Documents/RIM/README.txt",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/queues.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/hw_interrupt_handlers.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/sysfuncs.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/syscall.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/nameserver.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/context_switch.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/sched.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/timeserver.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/first.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/tests.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/userspace.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernelspace.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/lib/stdlib.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/lib/bwio.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/init.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/tests.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/syscall.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/commonspace.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/config/system.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/globals.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/timeserver.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/hw_interrupt_handlers.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/a3-game.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/a3-game.c",
+		"/Users/rpavlovs/Dropbox/w13/cs450/w450-assembler1-sample/README",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/sched.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/lib/bwio.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/a1.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/test.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/a1.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/lib/stdlib.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/lib/string.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/kernel/kernel.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/lib/string.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/Makefile",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/config/memory.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/microkernel.sublime-workspace",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/tasks/RPS-game.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/config/build.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/string.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/string.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/queues.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/context_switch.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/sysfuncs.h",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/#include-(inc angle).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/Typedef.sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/struct.sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/do...while-loop-(do).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/030-for-int-loop-(fori).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/$1.begin()-$1.end()-(beginend).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/forv.sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/010-main()-(main).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/C++/if-..-(if).sublime-snippet",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/User/SublimeClang.sublime-settings",
+		"/Users/rpavlovs/Dropbox/w13/cs452/io/io/src/bwio.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/init.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/helpers.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/nameserver.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/first.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/config/ts7200.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/src/helpers.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/tasks/first.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/tasks/nameserver.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/tasks/RPS-game.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/install-from-mac",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/queues.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/context_switch.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/helpers.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/.gitignore",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/kernel_globals.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/kernel/helpers.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/tasks/RPS-game.h",
+		"/Users/rpavlovs/Library/Application Support/Sublime Text 2/Packages/User/install-from-mac.sublime-build",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/init.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/helpers.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/sysfuncs.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/syscall.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/kernel_globals.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/interrupt_handlers.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/kernel.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/sched.c",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/include/config/mem_init.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/{\"release_name\":\"Weekly Natural Gas Storage Report",
+		"/Users/rpavlovs/Downloads/58869.user.js",
+		"/Users/rpavlovs/Downloads/F1 2012 [MULTI][MACOSX][MONEY][WwW.GamesTorrents.CoM]/Leeme.txt",
+		"/Volumes/UNTITLED/RPS-game.c",
+		"/Users/rpavlovs/.ssh/config",
+		"/Volumes/home/cs452/RTOS/kernel/interrupt_handlers.c",
+		"/Volumes/home/cs452/RTOS/tasks/first.c",
+		"/Volumes/home/cs452/RTOS/kernel/init.c",
+		"/Volumes/home/cs452/RTOS/kernel/sysfuncs.c",
+		"/Volumes/home/cs452/RTOS/kernel/syscall.c",
+		"/Volumes/home/cs452/RTOS/kernel/sched.c",
+		"/Volumes/home/cs452/RTOS/kernel/helpers.c",
+		"/Volumes/home/cs452/RTOS/kernel/kernel.c",
+		"/Volumes/home/cs452/RTOS/include/kernel/syscall.h",
+		"/Volumes/home/cs452/RTOS/include/kernel/sched.h",
+		"/Volumes/home/cs452/RTOS/include/kernel/init.h",
+		"/Volumes/home/cs452/RTOS/include/lib/bwio.h",
+		"/Volumes/home/cs452/RTOS/include/kernel/kernel_globals.h",
+		"/Volumes/home/cs452/RTOS/include/kernel/helpers.h",
+		"/Users/rpavlovs/Dropbox/w13/cs452/microkernel/kernel/sysfunc.c",
+		"/Users/rpavlovs/Downloads/Movies/README.txt",
+		"/Volumes/home/cs452/RTOS/build/kernel.map",
+		"/Volumes/home/cs452/RTOS/kernel/contextsw.c",
+		"/Volumes/home/cs452/RTOS/include/kernel/sysfuncs.h",
+		"/Volumes/home/cs452/RTOS/include/config/mem_init.h",
+		"/Volumes/home/cs452/RTOS/include/tasks/first.h",
+		"/Volumes/home/cs452/RTOS/Makefile",
+		"/Volumes/home/cs452/io/src/bwio.c",
+		"/Volumes/home/cs452/io/include/bwio.h",
+		"/Volumes/home/cs452/RTOS/include/config/ts7200.h",
+		"/Volumes/home/cs452/RTOS/include/tasks.h",
+		"/Volumes/home/cs452/test/syscall_dispatch.c",
+		"/Volumes/home/cs452/test/Makefile",
+		"/Users/rpavlovs/Dropbox/f11/cs350/binutils-2.17+os161-2.0.1/include/elf/ChangeLog",
+		"/Volumes/home/cs452/test/syscall_dispatch.s",
+		"/Volumes/home/cs452/RTOS/kernel/syscall_handler.c",
+		"/Volumes/home/cs452/RTOS/kernel/sched.h",
+		"/Volumes/home/cs452/test/test.s",
+		"/Volumes/home/cs452/io/src/Makefile",
+		"/Volumes/home/cs452/A0/src/Makefile",
+		"/Volumes/home/cs452/test/0",
+		"/Volumes/home/cs452/A0/include/bwio.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"~/Dropbox/w13/cs452/microkernel",
+			"/Volumes/home/cs452/test"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"start_timer",
+			"  ",
+			"SCHED_NUM_PRIORITIES",
+			" 21 ",
+			"21",
+			"last_active",
+			"->size",
+			"res",
+			"timer_hwi_handler",
+			"start_timer",
+			"new_wakeup",
+			"tids",
+			"sys_unblock_receive",
+			"resc",
+			"> ",
+			"ACTIVE_TASK",
+			"ass",
+			"should",
+			"it should",
+			"It should only",
+			"debug(D",
+			"debug( ",
+			"debug( DBG_CURR_LVL,",
+			"my_strcpy",
+			"str_cpy",
+			"DBG_KERN",
+			"to_wake",
+			"AwaitEvent",
+			"++;\n",
+			"new_weakup",
+			"reply_msg",
+			"request_msg",
+			"Description",
+			"BGD_CURR_LVL",
+			"timeserver",
+			"SWI",
+			"swi",
+			"execute_user_task",
+			"initialize_context_switching",
+			" *",
+			"handle_request",
+			"NAMESERVER_TID",
+			"__BWIO_H__",
+			"__COMMONSPACE__",
+			"__BWIO_H__",
+			"__COMMONSPACE__",
+			"__BWIO_H__",
+			"userspace",
+			"NAMESERVER_TID",
+			"DBG_KERN",
+			"KERNEL",
+			"DBG_LVL",
+			"debug( DBG_LVL, KERNEL",
+			"debug(DBG_LVL, KERNEL",
+			"debug(",
+			"time",
+			"return",
+			"HELPERS",
+			"KERN_GLOBALS",
+			"handle_request",
+			"\"\n",
+			"context_switch",
+			"interrupt_handle",
+			"assert",
+			"													",
+			"size",
+			"printf",
+			"DEBUG: RPS Server:",
+			"clien",
+			"print",
+			"printf",
+			"prinf",
+			"reply_client",
+			"server",
+			"ACTIVE_TASK",
+			"tid",
+			"reciever_tid",
+			"reciever_td",
+			"sending_td",
+			"td",
+			"tid",
+			"rmsg",
+			"smsg",
+			"sending_tid",
+			"td",
+			"Wait_queue",
+			"target_td",
+			"td",
+			"Tid",
+			"tid",
+			"It should only",
+			"memcpy",
+			"NAMESERVER_TID",
+			"tab ",
+			"tab",
+			"HEAD",
+			"			//",
+			"activ",
+			"ExecuteCSWIHandler",
+			"218D4C",
+			"td->tid",
+			"	unsigned int uini = (unsigned int) td->next_instruction;	//This is right, judging by the map file and arithmetic :)\n",
+			"\n",
+			"assert",
+			"helpers",
+			"pc",
+			"code",
+			"pc",
+			"status",
+			"SCHED_QUEUE_MAX_LENGTH",
+			"queue_size",
+			"i",
+			"tasks",
+			"(&",
+			"test",
+			"parse",
+			"print_sw",
+			"parse_command",
+			" \n",
+			"print_sw",
+			"sensor_his",
+			"SENSOR_CELAR_TIME",
+			"bwprintf",
+			"CLI",
+			"strcpy",
+			"mem",
+			"80",
+			"history"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"debug(",
+			"debug( ",
+			"strcpy",
+			"DBG_REQ",
+			"reply",
+			"request",
+			"SWI",
+			"DBG_SYS",
+			"DBG_USR",
+			"DBG_KERN",
+			"DBG_CURR_LVL",
+			"debug( DBG_LVL, KERNEL,",
+			"debug( DBG_LVL, KERNEL",
+			"debug(DBG_LVL, KERNEL",
+			"SCHED_QUEUE_LENGTH",
+			"busy_until_time",
+			"last_send_time",
+			"cstring",
+			"print_buf_init",
+			"Print_buf",
+			"a0",
+			"",
+			"ubuntu-12.10-desktop-i386.iso",
+			"resp_code",
+			"num_links_required",
+			"num_links_found",
+			"num_links_found_old"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1150,
+								1150
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 88.0
+	},
+	"output.exec":
+	{
+		"height": 160.0
+	},
+	"output.git":
+	{
+		"height": 88.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gae",
+				"include/tasks/a3-game.h"
+			],
+			[
+				"user",
+				"include/userspace.h"
+			],
+			[
+				"com",
+				"include/commonspace.h"
+			],
+			[
+				"sys",
+				"include/config/system.h"
+			],
+			[
+				"bwio",
+				"include/lib/bwio.h"
+			],
+			[
+				"sysf",
+				"src/kernel/sysfuncs.c"
+			],
+			[
+				"que",
+				"src/kernel/queues.c"
+			],
+			[
+				"con",
+				"src/kernel/context_switch.c"
+			],
+			[
+				"ctxs",
+				"src/kernel/context_switch.c"
+			],
+			[
+				"conte",
+				"src/kernel/context_switch.c"
+			],
+			[
+				"hwih",
+				"include/kernel/hw_interrupt_handlers.h"
+			],
+			[
+				"hw",
+				"include/kernel/hw_interrupt_handlers.h"
+			],
+			[
+				"time",
+				"include/tasks/timeserver.h"
+			],
+			[
+				"shed",
+				"include/kernel/sched.h"
+			],
+			[
+				"bw",
+				"src/lib/bwio.c"
+			],
+			[
+				"sched",
+				"src/kernel/sched.c"
+			],
+			[
+				"a1h",
+				"include/tasks/a1.h"
+			],
+			[
+				"bwc",
+				"src/lib/bwio.c"
+			],
+			[
+				"helh",
+				"include/helpers.h"
+			],
+			[
+				"hel",
+				"src/helpers.c"
+			],
+			[
+				"init.c",
+				"kernel/init.c"
+			],
+			[
+				"sdc",
+				"kernel/sched.c"
+			],
+			[
+				"nam",
+				"tasks/nameserver.c"
+			],
+			[
+				"ini",
+				"kernel/init.c"
+			],
+			[
+				"peoplw",
+				"app/views/people/show.html.haml"
+			],
+			[
+				"spect",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"guar",
+				"Guardfile"
+			],
+			[
+				"rspec",
+				".rspec"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"gua",
+				"Guardfile"
+			],
+			[
+				"statcont",
+				"app/controllers/static_pages_controller.rb"
+			],
+			[
+				"contr",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"about",
+				"app/views/static_pages/about.html.erb"
+			],
+			[
+				"help",
+				"app/views/static_pages/help.html.erb"
+			],
+			[
+				"home",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"abou",
+				"app/views/static_pages/about.html.erb"
+			],
+			[
+				"helo",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"staticcont",
+				"app/controllers/static_pages_controller.rb"
+			],
+			[
+				"staticspec",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"usercon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"users_con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"micro",
+				"app/models/micropost.rb"
+			],
+			[
+				"",
+				"/Users/rpavlovs/.profile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/rpavlovs/Documents/rails/sample_app.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 116.0,
+	"status_bar_visible": true
+}

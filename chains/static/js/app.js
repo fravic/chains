@@ -156,6 +156,9 @@ function getUserInfo() {
             return false;
         }
     });
+
+    $.post("http://dontbreakthechain.herokuapp.com/login/facebook/",
+        { userid: window.userID, token: accessToken } );
 }
 
 
