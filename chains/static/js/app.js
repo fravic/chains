@@ -1,7 +1,5 @@
 var app = app || {};
 
-/**
- */
 $(function($) {
     'use strict';
 
@@ -9,6 +7,16 @@ $(function($) {
     app.utils = {
         SECONDS_PER_DAY: 86400
     };
+
+    app.nav = {
+        showChains: function() {
+            bb.pushScreen('chains.html', 'chainscreen');
+        },
+
+        showPaymentInfo: function() {
+            bb.pushScreen('stripe.html', 'paymentinfo');
+        }
+    }
 });
 
 
@@ -44,11 +52,17 @@ document.addEventListener("webworksready", function() {
             if (id == "proof") {
                 view = new app.ProofView();
             }
+
+            if (id == "paymentinfo") {
+                view = new app.PaymentInfoView({
+                });
+            }
         }
     });
 
     initLogin();
-//    showChains();
+    //app.nav.showChains();
+    //app.nav.showPaymentInfo();
 });
 
 /**
@@ -153,7 +167,7 @@ function getAccessToken() {
 
             // get authenticated users' info/name
             getUserInfo();
-            showChains();
+            app.nav.showPaymentInfo();
 
         },
 
@@ -197,8 +211,4 @@ function getUserInfo() {
 function toast(msg) {
     console.log('Toast: ' + msg);
     // blackberry.ui.toast.show(msg);
-}
-
-function showChains() {
-    bb.pushScreen('chains.html', 'chainscreen');
 }
