@@ -10,12 +10,15 @@ $(function($) {
             _.bindAll(this);
             this.delegate = a["delegate"];
             $("#btnSubmitNewChain").click(function() {
+                console.log("what");
                 $("#new_chain form").submit();
             });
             $("#new_chain form").submit(this.onSubmit);
         },
         
         onSubmit: function() {
+                console.log("wut");
+
             var name, verifier, stakes, form;
             form = $("#new_chain form");
             name = $("input[name='name']", form).val();
