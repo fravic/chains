@@ -19,18 +19,17 @@ $(function($) {
     }
 });
 
-function getParameterByName(name)
-{
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.search);
+    if (results == null) {
+        return "";
+    } else {
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
 }
-
 
 document.addEventListener("webworksready", function() {
     bb.init({
@@ -38,11 +37,6 @@ document.addEventListener("webworksready", function() {
         controlsDark: true,
         listsDark: false,
 
-        // Fires "before" styling is applied and "before" the screen is inserted in the DOM
-        onscreenready: function(element, id) {
-        },
-
-        // Fires "after" styling is applied and "after" the screen is inserted in the DOM
         ondomready: function(element, id) {
             var chainSet, view;
 
@@ -75,8 +69,7 @@ document.addEventListener("webworksready", function() {
     });
 
     if (getParameterByName("share")) {
-//        app.nav.showChains();
-        app.nav.showPaymentInfo();
+        app.nav.showChains();
     } else {
         initLogin();
     }
@@ -101,7 +94,6 @@ function initLogin() {
     bb.pushScreen('login.html', 'login');
 }
 
-
 /**
  *  Set click handlers for the OAuth Start button
  *  Note: window.open can only be triggered in this way, you must set a click handler for this.
@@ -124,7 +116,6 @@ function setClickHandlers() {
         }, 500);
     });
 }
-
 
 /**
  *  Start the OAuth process by opening a childWindow, and directing the user to authorize the app
@@ -162,7 +153,6 @@ function startOAuth() {
         }
     }, 1000);
 }
-
 
 /**
  *  echange the oauth code, from an access token
@@ -219,7 +209,6 @@ function getUserInfo() {
     $.post("http://dontbreakthechain.herokuapp.com/login/facebook/",
         { userid: window.userID, token: accessToken } );
 }
-
 
 /**
  *  helper function to display a toast message to the user

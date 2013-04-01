@@ -12,7 +12,6 @@ $(function($) {
         },
 
         findPhoto: function(evt) {
-            console.log("find");
             this.files = evt.target.files; // FileList object
             // Loop through all Images
             for (var i = 0, f; f = this.files[i]; i++) {
