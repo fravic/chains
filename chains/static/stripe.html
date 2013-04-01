@@ -3,32 +3,33 @@
   <h1>Please Enter Your Credit Card Info</h1>
 
   <div id="container">
-  <form action="" method="POST" id="payment-form">
-    <span class="payment-errors"></span>
+    <form action="" method="POST" id="payment-form">
+      <span class="payment-errors"></span>
 
-    <div class="form-row">
-      <label>
-        <span>Card Number</span>
-        <input type="text" size="20" data-stripe="number"/>
-      </label>
-    </div>
+      <div class="form-row">
+        <label>
+          <span>Card Number</span>
+          <input type="text" size="20" data-stripe="number"/>
+        </label>
+      </div>
 
-    <div class="form-row">
-      <label>
-        <span>CVC</span>
-        <input type="text" size="4" data-stripe="cvc"/>
-      </label>
-    </div>
+      <div class="form-row">
+        <label>
+          <span>CVC</span>
+          <input type="text" size="4" data-stripe="cvc"/>
+        </label>
+      </div>
 
-    <div class="form-row">
-      <label>
-        <span>Expiration Month (MM)</span>
-        <input type="text" size="2" data-stripe="exp-month"/>
-      </label>
-      <span>Expiration Year (YYYY)</span>
-      <input type="text" size="4" data-stripe="exp-year"/>
-    </div>
-  </form>
+      <div class="form-row">
+        <label>
+          <span>Expiration Month (MM)</span>
+          <input type="text" size="2" data-stripe="exp-month"/>
+        </label>
+        <span>Expiration Year (YYYY)</span>
+        <input type="text" size="4" data-stripe="exp-year"/>
+      </div>
+      <input type="submit" class="hidden">
+    </form>
   </div>
 
   <div data-bb-type="action-bar">
