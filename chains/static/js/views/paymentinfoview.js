@@ -12,6 +12,10 @@ $(function($) {
             Stripe.setPublishableKey('pk_test_5CgaiRIGe5DpJcVKsm4AHYKf');
             var self = this;
 
+            $('#submit-payment-info').click(function() {
+                $('#payment-form').submit();
+            });
+
             $('#payment-form').submit(function(event) {
                 var $form = $(this);
 
