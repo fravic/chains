@@ -8,7 +8,7 @@ $(function($) {
         url: '/api/v1/x/',
 
         initialize: function(a) {
-            this.date = a["date"];
+            this.day = a["day"];
             this.chain = a["chain"];
         },
     });

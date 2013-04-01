@@ -25,7 +25,7 @@ $(function($) {
 
         isDayComplete: function(d) {
             return _.find(this.xs, function(xd) {
-                var xdate = Date.parse(xd.date).clearTime();
+                var xdate = Date.parse(xd.day).clearTime();
                 return xdate.equals(d);
             });
         },
@@ -35,7 +35,7 @@ $(function($) {
             if (x = this.isDayComplete(d)) {
                 this.xs.remove(x);
             } else {
-                x = new app.X({date: d.toString("yyyy-MM-dd"), chain: this.id});
+                x = new app.X({day: d.toString("yyyy-MM-dd"), chain: this.id});
                 this.xs.push(x);
                 x.save();
                 this.save();
