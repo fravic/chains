@@ -23,6 +23,7 @@
 
   <access uri="*" subdomains="true">
     
+    <feature id="blackberry.ui.contextmenu" />
     <feature id="blackberry.ui.dialog"/>
 
     <feature id="blackberry.ui.toast" />
