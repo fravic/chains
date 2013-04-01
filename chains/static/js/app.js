@@ -168,7 +168,6 @@ function getAccessToken() {
             // get authenticated users' info/name
             getUserInfo();
             app.nav.showPaymentInfo();
-
         },
 
         error: function(data) {
