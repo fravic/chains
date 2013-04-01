@@ -73,11 +73,11 @@ document.addEventListener("webworksready", function() {
     });
 
     if (getParameterByName("share")) {
-        app.nav.showChains();
+    //    app.nav.showChains();
     } else {
         initLogin();
     }
-    //app.nav.showPaymentInfo();
+    app.nav.showPaymentInfo();
 });
 
 /**
