@@ -92,7 +92,7 @@ function initLogin() {
     facebookOptions = {
         clientId: '577335762285018',
         clientSecret: 'b7cfd33ac48a2a56feed235b792e9b85',
-        redirectUri: 'http://dontbreakthechain.herokuapp.com/'
+        redirectUri: 'http://dontbreakthechain.herokuapp.com/static/index.html'
     };
 
     // (bbUI) push the login.html page
