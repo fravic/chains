@@ -29,33 +29,11 @@
     <script src="js/models/chain.js" type="text/javascript"></script>
     <script src="js/models/x.js" type="text/javascript"></script>
     <script src="js/collections/chains.js" type="text/javascript"></script>
+    <script src="js/views/chainview.js" type="text/javascript"></script>
+    <script src="js/views/proofview.js" type="text/javascript"></script>
     
     <!-- initialization -->
     <script src="js/app.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      document.addEventListener("webworksready", initApp());
-
-      bb.init({
-              actionBarDark: true,
-              controlsDark: true,
-              listsDark: false,
-
-              // Fires "before" styling is applied and "before" the screen is inserted in the DOM
-              onscreenready: function(element, id) {
-                             },
-
-              // Fires "after" styling is applied and "after" the screen is inserted in the DOM
-              ondomready: function(element, id) {
-                            if (id === 'login') {
-                                  setClickHandlers();
-                              }
-
-                              if (id === 'connected') {
-                                  toast('Hello ' + userName + '!');
-                              }
-                          }
-              });
-    </script>
   </head>
   <body>
 <!--     <div id="container">

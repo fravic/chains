@@ -1,68 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" id="viewport" content="initial-scale=0.4,user-scalable=no" />
-
-    <title>Don't Break the Chain!</title>
-
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
-
-    <!-- framework -->
-    <script src="local:///chrome/webworks.js" type="text/javascript"></script>
-    
-    <!-- libraries -->
-    <script src="js/lib/jquery.min.js" type="text/javascript"></script>
-    <script src="js/lib/underscore.min.js" type="text/javascript"></script>
-    <script src="js/lib/backbone.min.js" type="text/javascript"></script>
-    <script src="js/lib/backbone-relational.js" type="text/javascript"></script>
-    <script src="js/lib/backbone-tastypie.js" type="text/javascript"></script>
-    <script src="js/lib/date.min.js" type="text/javascript"></script>
-    <script src="js/lib/less.min.js" type="text/javascript"></script>
-
-    <!-- app code -->
-    <script src="js/views/chainview.js" type="text/javascript"></script>
-    <script src="js/models/chain.js" type="text/javascript"></script>
-    <script src="js/models/x.js" type="text/javascript"></script>
-    <script src="js/collections/chains.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
-
-  </head>
-  <body>
-    <div id="container">
-      <h1>Don't Break the Chain!</h1>
-      <nav>
-        <button id="btn_new">New Chain</button>
-      </nav>
-      <div id="chains">
-      </div>
-      <div id="new_chain">
-        <form action="#">
-          <div class="field clearfix">
-            <label>Name</label>
-            <input name="name">
-          </div>
-          <div class="field clearfix">
-            <label>Verifier Email</label>
-            <input name="verifier">
-          </div>
-          <div class="field clearfix">
-            <label>Stakes</label>
-            <input name="stakes">
-          </div>
-          <input type="submit">
-        </form>
-      </div>
+<div data-bb-type="screen">
+  <div id="container">
+    <h1>Don't Break the Chain!</h1>
+    <nav>
+      <button id="btn_new">New Chain</button>
+    </nav>
+    <div id="chains">
     </div>
-    <div class="chain template clearfix">
-      <div class="header clearfix">
-        <div class="name"></div>
-        <div class="stakes"></div>
-      </div>
-      <div class="circles">
-      </div>
+    <div id="new_chain">
+      <form action="#">
+        <div class="field clearfix">
+          <label>Name</label>
+          <input name="name">
+        </div>
+        <div class="field clearfix">
+          <label>Verifier Email</label>
+          <input name="verifier">
+        </div>
+        <div class="field clearfix">
+          <label>Stakes</label>
+          <input name="stakes">
+        </div>
+        <input type="submit">
+      </form>
     </div>
-  </body>
-</html>
+  </div>
+  <div class="chain template clearfix">
+    <div class="header clearfix">
+      <div class="name"></div>
+      <div class="stakes"></div>
+    </div>
+    <div class="circles">
+    </div>
+  </div>
+</div>

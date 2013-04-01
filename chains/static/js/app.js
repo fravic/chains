@@ -9,22 +9,52 @@ $(function($) {
     app.utils = {
         SECONDS_PER_DAY: 86400
     };
-
-    var chainSet, view;
-
- /*   chainSet = new app.ChainSet();
-    view = new app.ChainsView({
-        set: chainSet
-    });*/
-
 });
 
+
+document.addEventListener("webworksready", function() {
+    bb.init({
+        actionBarDark: true,
+        controlsDark: true,
+        listsDark: false,
+
+        // Fires "before" styling is applied and "before" the screen is inserted in the DOM
+        onscreenready: function(element, id) {
+        },
+
+        // Fires "after" styling is applied and "after" the screen is inserted in the DOM
+        ondomready: function(element, id) {
+            var chainSet, view;
+
+            if (id === 'login') {
+                setClickHandlers();
+            }
+
+            if (id === 'chainscreen') {
+                if (!app.chainsView) {
+                    app.chainSet = new app.ChainSet();
+                    app.chainsView = new app.ChainsView({
+                        set: app.chainSet
+                    });
+                } else {
+                    app.chainsView.chainsFetched();
+                }
+            }
+
+            if (id == "proof") {
+                view = new app.ProofView();
+            }
+        }
+    });
+
+    initLogin();
+//    showChains();
+});
 
 /**
  *  called by the webworksready event when the environment is ready
  */
-function initApp() {
-
+function initLogin() {
     // Facebook OAuth
     authCode = null;
     childWindow = null;
@@ -123,8 +153,7 @@ function getAccessToken() {
 
             // get authenticated users' info/name
             getUserInfo();
-
-            bb.pushScreen('chains.html', 'connected');
+            showChains();
 
         },
 
@@ -168,4 +197,8 @@ function getUserInfo() {
 function toast(msg) {
     console.log('Toast: ' + msg);
     // blackberry.ui.toast.show(msg);
+}
+
+function showChains() {
+    bb.pushScreen('chains.html', 'chainscreen');
 }

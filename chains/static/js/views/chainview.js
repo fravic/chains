@@ -3,6 +3,8 @@ var app = app || {};
 $(function($) {
     'use strict';
 
+    var chainSet, view;
+
     app.ChainsView = Backbone.View.extend({
         NUM_CIRCLES_TO_DISPLAY: 7,
 
@@ -74,11 +76,16 @@ $(function($) {
         },
 
         markX: function(e) {
-            var chain, circle;
+            var chain, circle, d;
             circle = $(e.target);
             chain = circle.data("chain");
             circle.toggleClass("complete");
-            chain.toggleDayComplete(circle.data("day"));
+            d = circle.data("day");
+            chain.toggleDayComplete(d);
+            
+            if (chain.isDayComplete(d)) {
+                bb.pushScreen('proof.html', 'proof');
+            }
         },
     });
 });

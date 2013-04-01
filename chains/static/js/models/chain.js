@@ -17,13 +17,15 @@ $(function($) {
             this.name = a["name"];
             this.stakes = a["stakes"];
             this.xs = a["xs"];
-            console.log(this.xs);
+            if (!this.xs) {
+                this.xs = [];
+            }
             this.referee_email = a["referee_email"];
         },
 
         isDayComplete: function(d) {
             return _.find(this.xs, function(xd) {
-                var xdate = new Date(xd.day).clearTime();
+                var xdate = Date.parse(xd.date).clearTime();
                 return xdate.equals(d);
             });
         },
