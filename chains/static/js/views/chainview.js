@@ -73,6 +73,12 @@ $(function($) {
             newCircle.data("day", d);
             newCircle.click(this.markX);
             $(".circles", e).append(newCircle);
+            
+            var span = $("<DIV>");
+            span.html(d.toString("ddd"));
+            span.css({fontWeight:"bold"});
+            newCircle.append(span);
+            newCircle.append(d.toString("M/d"));
         },
 
         markX: function(e) {
