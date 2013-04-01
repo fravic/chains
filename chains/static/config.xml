@@ -29,7 +29,7 @@
     <feature id="blackberry.media.camera" />
   </access>
 
-  <access uri="*" subdomains="true">
+  <access uri="*" subdomains="true" />
   
   <feature id="blackberry.ui.contextmenu" />
   <feature id="blackberry.ui.dialog"/>
@@ -44,7 +44,6 @@
   <feature id="blackberry.app" >
     <param name="websecurity" value="disable" />
   </feature>
-
 
   <feature id="blackberry.app" required="true" version="1.0.0"/>
   <feature id="blackberry.invoke" required="true" version="1.0.0"/>

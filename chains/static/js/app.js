@@ -51,14 +51,10 @@ document.addEventListener("webworksready", function() {
             }
 
             if (id === 'chainscreen') {
-                if (!app.chainsView) {
-                    app.chainSet = new app.ChainSet();
-                    app.chainsView = new app.ChainsView({
-                        set: app.chainSet
-                    });
-                } else {
-                    app.chainsView.chainsFetched();
-                }
+                app.chainSet = new app.ChainSet();
+                app.chainsView = new app.ChainsView({
+                    set: app.chainSet
+                });
             }
 
             if (id == "proof") {
@@ -73,8 +69,8 @@ document.addEventListener("webworksready", function() {
     });
 
     if (getParameterByName("share")) {
-//        app.nav.showChains();
-        app.nav.showPaymentInfo();
+        app.nav.showChains();
+//        app.nav.showPaymentInfo();
     } else {
         initLogin();
     }
