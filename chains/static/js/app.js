@@ -19,6 +19,18 @@ $(function($) {
     }
 });
 
+function getParameterByName(name)
+{
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regexS = "[\\?&]" + name + "=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.search);
+  if(results == null)
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 
 document.addEventListener("webworksready", function() {
     bb.init({
@@ -60,8 +72,11 @@ document.addEventListener("webworksready", function() {
         }
     });
 
-    initLogin();
-    //app.nav.showChains();
+    if (getParameterByName("share")) {
+        app.nav.showChains();
+    } else {
+        initLogin();
+    }
     //app.nav.showPaymentInfo();
 });
 
