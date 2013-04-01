@@ -7,7 +7,11 @@ $(function($) {
         initialize: function(a) {
             _.bindAll(this);
 
-            document.getElementById('picture').addEventListener('change', this.displayImage, false);
+            try {
+                blackberry.media.camera.takePicture(successCB, closedCB, errorCB);
+            } catch(e) {
+                alert("Error in supported: " + e);
+            }
             document.getElementById('upload').addEventListener('click', this.upload, false);
         },
 
