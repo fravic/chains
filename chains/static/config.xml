@@ -21,24 +21,23 @@
     
   <content src="http://dontbreakthechain.herokuapp.com/static/index.html" />
 
-  <access uri="*" subdomains="true">
-    
-    <feature id="blackberry.ui.dialog"/>
+  <access uri="*" subdomains="true" />
+  
+  <feature id="blackberry.ui.dialog"/>
 
-    <feature id="blackberry.ui.toast" />
-    
-    <feature id="blackberry.app.orientation">
-      <param name="mode" value="portrait" />
-    </feature>
+  <feature id="blackberry.ui.toast" />
+  
+  <feature id="blackberry.app.orientation">
+    <param name="mode" value="portrait" />
+  </feature>
 
-    <feature id="blackberry.app" >
-      <param name="websecurity" value="disable" />
-    </feature>
+  <feature id="blackberry.app" >
+    <param name="websecurity" value="disable" />
+  </feature>
 
 
-    <feature id="blackberry.app" required="true" version="1.0.0"/>
-    <feature id="blackberry.invoke" required="true" version="1.0.0"/>
-    <feature id="blackberry.media.camera" />
-  </access>
+  <feature id="blackberry.app" required="true" version="1.0.0"/>
+  <feature id="blackberry.invoke" required="true" version="1.0.0"/>
+  <feature id="blackberry.media.camera" required="true" version="1.0.0.0" />
 
 </widget>
