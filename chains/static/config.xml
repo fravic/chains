@@ -41,6 +41,7 @@
   <feature id="blackberry.app" required="true" version="1.0.0"/>
   <feature id="blackberry.invoke" required="true" version="1.0.0"/>
   <feature id="blackberry.media.camera" required="true" version="1.0.0.0" />
+  <feature id="blackberry.app.event"/>
 
   <access uri="http://dontbreakthechain.herokuapp.com/" subdomains="true">
     <feature id="blackberry.app.event" required="true" version="1.0.0.0"/>
