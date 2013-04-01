@@ -43,23 +43,20 @@ $(function($) {
         },
 
         btnNewChain: function() {
-            $("#new_chain").show();
-            $("#new_chain form").submit(this.createNewChain);
+            bb.pushScreen("newchain.html", "newchain");
         },
 
-        createNewChain: function(e) {
+        createNewChain: function(name, verifier, stakes) {
             var c, form;
 
             form = $("#new_chain form");
             c = new app.Chain({
-                name: $("input[name='name']", form).val(),
-                stakes: $("input[name='stakes']", form).val()
+                name: name,
+                stakes: stakes
             });
             this.set.add(c);
             c.save();
 
-            $("#new_chain").fadeOut();
-            e.preventDefault();
             return false;
         },
 

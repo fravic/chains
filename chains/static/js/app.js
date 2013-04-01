@@ -65,6 +65,12 @@ document.addEventListener("webworksready", function() {
                 view = new app.PaymentInfoView({
                 });
             }
+
+            if (id == "newchain" ) {
+                view = new app.NewChainView({
+                    delegate: app.chainsView.createNewChain
+                });
+            }                
         }
     });
 

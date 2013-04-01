@@ -61,7 +61,7 @@ INPUT {
   background: white;
   border: 3px solid @lightGray;
   font-size: @med;
-  min-height: 40px;
+  min-height: 50px;
   padding: 0 15px;
   width: 100%;
   }
@@ -88,6 +88,7 @@ LABEL {
 
 #container {
   margin: 0 auto;
+  padding: 0 20px;
   width: @screenWidth;
   }
 
@@ -136,8 +137,6 @@ LABEL {
   }
 
 #new_chain {
-  background: rgba(0, 0, 0, 0.9);
-  display: none;
   padding: 100px 20px;
   position: absolute;
   top: 0;
@@ -155,4 +154,17 @@ LABEL {
 .payment-errors {
   color: red;
   margin-bottom: 10px;
+  }
+
+#login_logo {
+  position: absolute;
+  width: 85%;
+  left: 7%;
+  top: 25%;
+  }
+
+#chains_logo {
+  width: 50%;
+  display: block;
+  margin: 40px auto;
   }
