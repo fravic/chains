@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 
-from chains.models import Chain, X, UserProfile
+from chains.models import Chain, X, UserProfile, Image
 
 admin.site.unregister(User)
 
@@ -19,5 +19,8 @@ class XInline(admin.StackedInline):
 
 class ChainAdmin(admin.ModelAdmin):
     inlines = [XInline,]
+
+class ImageAdmin(admin.ModelAdmin):
+    model = Image
 
 admin.site.register(Chain, ChainAdmin)
