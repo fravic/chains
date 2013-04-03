@@ -41,11 +41,12 @@ $(function($) {
                 }
                 //initiate and send via XHR2
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', url, true);
+                xhr.open('POST', url, false);
                 xhr.onload = function(e) {
                 };
                 //Upload Image
                 xhr.send(formData);  // multipart/form-data
+                alert(xhr.responseText);
             }
             else{
                 alert("No Picture to Upload");
