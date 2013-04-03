@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django import forms
 from django.core.mail import EmailMessage
 
-from tokenapi.http import JsonResponse
+from tokenapi.http import JsonResponse, JsonError
 
 from chains.models import Image, Chain
 
