@@ -16,7 +16,7 @@ class ImageForm(forms.ModelForm):
 
 def upload(request):
     form = ImageForm(request.POST, request.FILES)
-    chain = Chain.objects.get(pk=7)
+    chain = Chain.objects.get(pk=12)
 
     if form.is_valid():
         image = form.save()
