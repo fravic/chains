@@ -13,16 +13,16 @@ def login_facebook(request):
     })
 
 def stripe_info(request):
-    user = get_object_or_404(User, pk=request.POST.get('pk'))
+    user = get_object_or_404(User, pk=request.REQUEST.get('pk'))
 
-    stripe_token = request.POST.get('stripe_token')
+    stripe_token = request.REQUEST.get('stripe_token')
 
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
     if stripe_token:
         customer = stripe.Customer.create(
             card=stripe_token,
-            description=request.user.email,
+            description="broke the chain",
         )
 
         user.get_profile().customer_id = customer.id
