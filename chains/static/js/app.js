@@ -64,7 +64,7 @@ document.addEventListener("webworksready", function() {
                 view = new app.NewChainView({
                     delegate: app.chainsView.createNewChain
                 });
-            }                
+            }
         }
     });
 
@@ -174,7 +174,10 @@ function getAccessToken() {
 
             // get authenticated users' info/name
             getUserInfo();
-            app.nav.showPaymentInfo();
+            if(window.user_has_stripe)
+                app.nav.showPaymentInfo();
+            else
+                app.nav.showChains();
         },
 
         error: function(data) {
@@ -208,11 +211,10 @@ function getUserInfo() {
 
     $.post("http://dontbreakthechain.herokuapp.com/api/v1/login/facebook/",
         { userid: window.userID, token: accessToken },
-        function(data) {
-        var response = jQuery.parseJSON(data);
-
-        window.user_pk = response.pk;
-    });
+        function(response) {
+            window.user_pk = response.pk;
+            window.user_has_stripe = response.has_stripe;
+        });
 }
 
 /**
