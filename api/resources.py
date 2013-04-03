@@ -4,6 +4,8 @@ from tastypie.resources import ModelResource, fields
 from chains.models import Chain, X
 
 class XResource(ModelResource):
+    chain = fields.ForeignKey('api.resources.ChainResource', 'chain',)
+
     class Meta:
         queryset = X.objects.all()
         authorization = Authorization()
