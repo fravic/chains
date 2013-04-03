@@ -46,6 +46,14 @@ LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
+# stripe
+if DEBUG:
+    STRIPE_SECRET_KEY = 'sk_test_PKxB0BzXhkgKPDoqZoHHlpaO'
+else:
+    STRIPE_SECRET_KEY = 'sk_live_qhO42vPj0wvXBZBi8dO3Ph9O'
+
+AUTH_PROFILE_MODULE = "chains.UserProfile"
+
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -77,7 +85,6 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
