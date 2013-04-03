@@ -83,7 +83,7 @@ TEMPLATE_LOADERS = (
 )
 
 #S3
-DEFAULT_FILE_STORAGE = 'libs.storages.S3Storage.S3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_SECRET_ACCESS_KEY = 'AKIAJ4Z5HPVQSZFGFEUQ'
 AWS_ACCESS_KEY_ID = 'e3o50gZ6PLiLvaeeuaYw/Gf4lMgqSbWXPgAxOA3t'
 AWS_STORAGE_BUCKET_NAME = 'dont_break_the_chain'
