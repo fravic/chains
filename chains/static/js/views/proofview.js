@@ -46,6 +46,7 @@ $(function($) {
                 };
                 //Upload Image
                 xhr.send(formData);  // multipart/form-data
+                alert(xhr.responseText);
             }
             else{
                 alert("No Picture to Upload");
