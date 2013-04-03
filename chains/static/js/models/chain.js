@@ -9,7 +9,7 @@ $(function($) {
             key: 'xs',
             relatedModel: 'app.X',
             reverseRelation: {
-                key: 'chain_id',
+                key: 'chain_id'
             }
         }],
 
@@ -32,7 +32,7 @@ $(function($) {
 
         toggleDayComplete: function(d) {
             var x;
-            if (x = this.isDayComplete(d)) {
+            if (( x = this.isDayComplete(d) )) {
                 this.xs.remove(x);
             } else {
                 x = new app.X({day: d.toString("yyyy-MM-dd"), chain: this.id});

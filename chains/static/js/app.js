@@ -198,9 +198,15 @@ function getUserInfo() {
         url: url,
         dataType: 'json',
         success: function(data) {
-            window.userName = data.name;
-            window.userID = data.id;
-            console.log('Logged in as ' + userName + ' (ID:' + userID + ')');
+            console.log('Logged in as ' + data.name + ' (ID:' + data.id + ')');
+
+
+            $.post("http://dontbreakthechain.herokuapp.com/api/v1/login/facebook/",
+                { userID: data.id, token: accessToken },
+                function(response) {
+                    window.user_pk = response.pk;
+                    window.user_has_stripe = response.has_stripe;
+                });
         },
 
         error: function(data) {
@@ -209,12 +215,8 @@ function getUserInfo() {
         }
     });
 
-    $.post("http://dontbreakthechain.herokuapp.com/api/v1/login/facebook/",
-        { userid: window.userID, token: accessToken },
-        function(response) {
-            window.user_pk = response.pk;
-            window.user_has_stripe = response.has_stripe;
-        });
+
+    
 }
 
 /**
