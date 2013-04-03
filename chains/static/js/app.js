@@ -206,8 +206,13 @@ function getUserInfo() {
         }
     });
 
-    $.post("http://dontbreakthechain.herokuapp.com/login/facebook/",
-        { userid: window.userID, token: accessToken } );
+    $.post("http://dontbreakthechain.herokuapp.com/api/v1/login/facebook/",
+        { userid: window.userID, token: accessToken },
+        function(data) {
+        var response = jQuery.parseJSON(data);
+
+        window.user_pk = response.pk;
+    });
 }
 
 /**
