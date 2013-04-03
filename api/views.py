@@ -34,7 +34,7 @@ def upload(request):
         msg.send()
     else:
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently said he has completed a block of his chain, '%s'.</p> <p>Please verify that your friend has been \
-            completing their chain. Remember that they will be charged $%s if you click the link.</p>" % (
+            completing their chain. If they have not please click <a href='%s'>here</a>. Remember that they will be charged $%s if you click the link.</p>" % (
             chain.name,
             'http://dontbreakthechain.herokuapp.com/charge/%s' % '13',
             chain.stakes,
