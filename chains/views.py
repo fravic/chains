@@ -8,7 +8,7 @@ from chains.models import Chain
 
 
 def charge(request, pk, template_name="charge.html"):
-    chain = Chain.objects.get(pk=0)
+    chain = Chain.objects.get(pk=1)
 
     stripe.Charge.create(
         amount=int(chain.stakes * 100), # in cents
