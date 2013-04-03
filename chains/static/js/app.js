@@ -201,11 +201,10 @@ function getUserInfo() {
                 { userID: data.id, token: accessToken },
                 function(response) {
                     window.user_pk = response.pk;
-                    window.user_has_stripe = response.has_stripe;
-                    if(window.user_has_stripe)
-                        app.nav.showPaymentInfo();
-                    else
+                    if(response.has_stripe)
                         app.nav.showChains();
+                    else
+                        app.nav.showPaymentInfo();
                 });
         },
 
