@@ -25,7 +25,7 @@ def upload(request):
         # Upload successful, send referee email
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
             your friend is completing his chain. <img src='%s'> <p>If the image above does not verify your friend's chain, click <a href=''>here</a> to notify us. Remember that they will be charged $%s if you click the link." % (
-                image.url,
+                image.image.url,
                 "linkhere",
                 chain.stakes,
         ), settings.EMAIL_HOST_USER, [chain.referee_email])
