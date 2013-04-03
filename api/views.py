@@ -7,10 +7,14 @@ from tokenapi.http import JsonResponse
 import stripe
 
 def login_facebook(request):
-    return JsonResponse({
-        'pk': 3,
-        'has_stripe': False,
-    })
+    user_id = request.REQUEST.get('userID')
+
+    try:
+        user = User.objects.get(username=user_id).pk
+    except User.DoesNotExist:
+        user = User.objects.create_user(user_id, "", "G")
+
+    return JsonResponse({'pk': user.pk, 'has_stripe': bool(user.get_profile().customer_id)})
 
 def stripe_info(request):
     user = get_object_or_404(User, pk=request.REQUEST.get('pk'))
@@ -29,4 +33,3 @@ def stripe_info(request):
         user.get_profile().save()
 
     return JsonResponse({})
-

@@ -7,6 +7,7 @@ class XResource(ModelResource):
     class Meta:
         queryset = X.objects.all()
         authorization = Authorization()
+        allowed_methods = ('post', 'get',)
 
 class ChainResource(ModelResource):
     xs = fields.ToManyField(XResource, 'x_set', full=True,)
