@@ -33,7 +33,9 @@ def upload(request):
         msg.content_subtype = "html"  # Main content is now text/html
         msg.send()
 
-    return JsonResponse({form.errors})
+        return JsonResponse({})
+
+    return JsonError(form.errors)
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')
