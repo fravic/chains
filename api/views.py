@@ -20,7 +20,7 @@ def upload(request):
     if form.is_valid():
         image = form.save()
 
-        chain = Chain.objects.get(pk=5)
+        chain = Chain.objects.get(pk=6)
 
         # Upload successful, send referee email
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
