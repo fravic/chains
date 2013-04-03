@@ -7,7 +7,7 @@ import stripe
 from chains.models import Chain
 
 
-def charge(request, pk, template_name="charge.html"):
+def charge(request, image_id, template_name="charge.html"):
     chain = Chain.objects.get(pk=1)
 
     stripe.Charge.create(
