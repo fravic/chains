@@ -12,7 +12,7 @@ $(function($) {
         },
 
         findPhoto: function(evt) {
-            this.file = evt.target.files[0]; // FileList object
+            this.file = evt.target.value; // FileList object
             // Loop through all Images
             if (this.file)
                 var reader = new FileReader();
