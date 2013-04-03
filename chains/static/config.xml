@@ -35,6 +35,7 @@
 
 
   <feature id="blackberry.ui.toast" />
+  <feature id="blackberry.system.event" />
   
   <feature id="blackberry.app.orientation">
     <param name="mode" value="portrait" />
