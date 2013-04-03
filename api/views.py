@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django import forms
 from django.core.mail import EmailMessage
 
-from tokenapi.http import JsonResponse, JsonError
+from tokenapi.http import JsonResponse
 
 from chains.models import Image, Chain
 
@@ -24,7 +24,7 @@ def upload(request):
 
         # Upload successful, send referee email
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
-            your friend is completing his chain. <img src='%s'> <p>If the image above does not verify your friend's chain, click <a href='%s'>here</a> to notify us. Remember that they will be charged $%s if you click the link." % (
+            your friend is completing their chain. <img src='%s'> <p>If the image above does not verify your friend's chain, click <a href='%s'>here</a> to notify us. Remember that they will be charged $%s if you click the link." % (
             chain.name,
             image.image.url,
             'http://dontbreakthechain.herokuapp.com/charge/%s' % image.pk,
@@ -32,10 +32,17 @@ def upload(request):
         ), settings.EMAIL_HOST_USER, [chain.referee_email,])
         msg.content_subtype = "html"  # Main content is now text/html
         msg.send()
+    else:
+        msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently said he has completed a block of his chain, '%s'.</p> <p>Please verify that your friend has been \
+            completing their chain. Remember that they will be charged $%s if you click the link.</p>" % (
+            chain.name,
+            'http://dontbreakthechain.herokuapp.com/charge/%s' % image.pk,
+            chain.stakes,
+        ), settings.EMAIL_HOST_USER, [chain.referee_email,])
+        msg.content_subtype = "html"  # Main content is now text/html
+        msg.send()
 
-        return JsonResponse({})
-
-    return JsonError(form.errors)
+    return JsonResponse({})
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')
