@@ -1,9 +1,8 @@
 from django.contrib import admin
-from auth.models import UserProfile
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 
-from chains.models import Chain, X
+from chains.models import Chain, X, UserProfile
 
 admin.site.unregister(User)
 
