@@ -43,7 +43,7 @@ $(function($) {
                 $form.append($('<input type="hidden" name="stripeToken" />').val(token));
                 console.log(token);
 
-                $.post("http://dontbreakthechain.herokuapp.com/api/v1/stripe/info/", { stripe_token: token, pk: 3 } );
+                $.post("http://dontbreakthechain.herokuapp.com/api/v1/stripe/info/", { stripe_token: token, pk: window.user_pk } );
 
                 app.nav.showChains();
             }

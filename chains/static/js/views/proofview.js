@@ -31,18 +31,18 @@ $(function($) {
 
         upload: function() {
             // Source: https://github.com/blackberry/BB10-WebWorks-Samples/blob/master/camera/app/index.html
-            var url = '/upload';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
+            var url = 'http://dontbreakthechain.herokuapp.com/api/v1/upload/';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
             //Check if user has taken a picture
             if (typeof this.files!="undefined"){
                 //Create form and append picutre
                 var formData = new FormData();
-                for (var i = 0, file; file = this.files[i]; ++i) {
+                for (var i = 0, file; (file = this.files[i]); ++i) {
                     formData.append(file.name, file);
                 }
                 //initiate and send via XHR2
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', url, true);
-                xhr.onload = function(e) { 
+                xhr.onload = function(e) {
                     if(this.status == 200){alert("Upload Successful");}
                 };
                 //Upload Image
@@ -54,6 +54,6 @@ $(function($) {
 
             bb.popScreen();
             this.remove();
-        },
+        }
     });
 });
