@@ -43,7 +43,6 @@ $(function($) {
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', url, true);
                 xhr.onload = function(e) {
-                    if(this.status == 200){alert("Upload Successful");}
                 };
                 //Upload Image
                 xhr.send(formData);  // multipart/form-data
