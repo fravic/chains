@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django import forms
 from django.core.mail import EmailMessage
 
-from tokenapi.http import JsonResponse
+from tokenapi.http import JsonResponse, JsonError
 
 from chains.models import Image, Chain
 
@@ -20,7 +20,7 @@ def upload(request):
     if form.is_valid():
         image = form.save()
 
-        chain = Chain.objects.get(pk=5)
+        chain = Chain.objects.get(pk=7)
 
         # Upload successful, send referee email
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
@@ -33,7 +33,9 @@ def upload(request):
         msg.content_subtype = "html"  # Main content is now text/html
         msg.send()
 
-    return JsonResponse({})
+        return JsonResponse({})
+
+    return JsonError("Not working")
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')
