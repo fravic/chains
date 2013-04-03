@@ -4,7 +4,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^chain/(?P<pk>\d+)/$', 'chains.views.chain', name='api_login_facebook'),
+    url(r'^charge/(?P<image_id>\d+)/$', 'chains.views.charge', name='charge'),
 
     url(r'^api/', include('api.urls')),
 

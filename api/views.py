@@ -20,14 +20,14 @@ def upload(request):
     if form.is_valid():
         image = form.save()
 
-        chain = Chain.objects.all()[0]
+        chain = Chain.objects.get(pk=0)
 
         # Upload successful, send referee email
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
             your friend is completing his chain. <img src='%s'> <p>If the image above does not verify your friend's chain, click <a href='%s'>here</a> to notify us. Remember that they will be charged $%s if you click the link." % (
             chain.name,
             image.image.url,
-            "linkhere",
+            'http://dontbreakthechain.herokuapp.com/charge/%s' % image.pk,
             chain.stakes,
         ), settings.EMAIL_HOST_USER, [chain.referee_email,])
         msg.content_subtype = "html"  # Main content is now text/html
