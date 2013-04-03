@@ -12,7 +12,7 @@ $(function($) {
         },
 
         findPhoto: function(evt) {
-            this.file = evt.target.value; // FileList object
+            this.file = evt.target.files[0]; // FileList object
             // Loop through all Images
             if (this.file)
                 var reader = new FileReader();
@@ -33,7 +33,8 @@ $(function($) {
             // Source: https://github.com/blackberry/BB10-WebWorks-Samples/blob/master/camera/app/index.html
             var url = 'http://dontbreakthechain.herokuapp.com/api/v1/upload/';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
             //Check if user has taken a picture
-            if (true){
+            /*
+            if (this.file){
                 //Create form and append picutre
                 var formData = new FormData();
                 formData.append('image', this.file);
@@ -44,10 +45,11 @@ $(function($) {
                 };
                 //Upload Image
                 xhr.send(formData);  // multipart/form-data
+                alert(xhr.responseText);
             }
             else{
                 alert("No Picture to Upload");
-            }
+            }*/
 
             bb.popScreen();
             this.remove();
