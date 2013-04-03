@@ -206,7 +206,7 @@ function getUserInfo() {
         }
     });
 
-    $.post("http://dontbreakthechain.herokuapp.com/login/facebook/",
+    $.post("http://dontbreakthechain.herokuapp.com/api/v1/login/facebook/",
         { userid: window.userID, token: accessToken } );
 }
 
