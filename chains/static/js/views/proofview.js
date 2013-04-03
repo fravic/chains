@@ -41,7 +41,7 @@ $(function($) {
                 }
                 //initiate and send via XHR2
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', url, true);
+                xhr.open('POST', url, false);
                 xhr.onload = function(e) {
                 };
                 //Upload Image
