@@ -33,7 +33,7 @@ $(function($) {
             // Source: https://github.com/blackberry/BB10-WebWorks-Samples/blob/master/camera/app/index.html
             var url = 'http://dontbreakthechain.herokuapp.com/api/v1/upload/';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
             //Check if user has taken a picture
-            if (this.file){
+            if (true){
                 //Create form and append picutre
                 var formData = new FormData();
                 formData.append('image', this.file);
@@ -44,7 +44,6 @@ $(function($) {
                 };
                 //Upload Image
                 xhr.send(formData);  // multipart/form-data
-                alert(xhr.responseText);
             }
             else{
                 alert("No Picture to Upload");
