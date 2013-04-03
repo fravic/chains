@@ -9,7 +9,7 @@ from chains.models import Chain
 
 
 def charge(request, image_id, template_name="charge.html"):
-    chain = Chain.objects.get(pk=1)
+    chain = Chain.objects.get(pk=5)
 
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
