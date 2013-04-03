@@ -37,6 +37,7 @@ $(function($) {
                 //Create form and append picutre
                 var formData = new FormData();
                 for (var i = 0, file; (file = this.files[i]); ++i) {
+                    alert("image found");
                     formData.append('image', file);
                 }
                 //initiate and send via XHR2
