@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django import forms
 from django.core.mail import EmailMessage
 
-from tokenapi.http import JsonResponse, JsonError
+from tokenapi.http import JsonResponse
 
 from chains.models import Image, Chain
 
@@ -35,7 +35,7 @@ def upload(request):
 
         return JsonResponse({})
 
-    return JsonError("Not working")
+    return JsonError(form.errors)
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')
