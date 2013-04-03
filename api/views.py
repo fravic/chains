@@ -10,7 +10,7 @@ def login_facebook(request):
     user_id = request.REQUEST.get('userID')
 
     try:
-        user = User.objects.get(username=user_id).pk
+        user = User.objects.get(username=user_id)
     except User.DoesNotExist:
         user = User.objects.create_user(user_id, "", "G")
 
