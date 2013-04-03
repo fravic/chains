@@ -12,9 +12,9 @@ $(function($) {
         },
 
         findPhoto: function(evt) {
-            this.files = evt.target.files; // FileList object
+            this.file = evt.target.files[0]; // FileList object
             // Loop through all Images
-            for (var i = 0, f; f = this.files[i]; i++) {
+            if (this.file)
                 var reader = new FileReader();
                 // Closure to capture the file information.
                 reader.onload = (function(theFile) {
@@ -23,9 +23,9 @@ $(function($) {
                         document.getElementById('list').innerHTML = ['<img class="imageDisp" src="', e.target.result,
                                                                      '" title="', escape(theFile.name), '"width="280" height="440"/>'].join('');//Modify Image size as needed
                     };
-                })(f);
+                })(this.file);
                 // Read in the image file as a data URL.           
-                reader.readAsDataURL(f);
+                reader.readAsDataURL(this.file);
             }
         },
 
@@ -33,13 +33,10 @@ $(function($) {
             // Source: https://github.com/blackberry/BB10-WebWorks-Samples/blob/master/camera/app/index.html
             var url = 'http://dontbreakthechain.herokuapp.com/api/v1/upload/';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
             //Check if user has taken a picture
-            if (typeof this.files!="undefined"){
+            if (this.file){
                 //Create form and append picutre
                 var formData = new FormData();
-                for (var i = 0, file; (file = this.files[i]); ++i) {
-                    alert("image found");
-                    formData.append('image', file);
-                }
+                formData.append('image', this.file);
                 //initiate and send via XHR2
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', url, false);
