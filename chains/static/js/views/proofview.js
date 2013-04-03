@@ -34,6 +34,7 @@ $(function($) {
             var url = 'http://dontbreakthechain.herokuapp.com/api/v1/upload/';//Place server ip here NOTE: Keep the port and folder consistant with server :8080/upload
             //Check if user has taken a picture
             if (typeof this.files!="undefined"){
+                alert(this.files);
                 //Create form and append picutre
                 var formData = new FormData();
                 for (var i = 0, file; (file = this.files[i]); ++i) {
