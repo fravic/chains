@@ -52,7 +52,8 @@ $(function($) {
             form = $("#new_chain form");
             c = new app.Chain({
                 name: name,
-                stakes: stakes
+                stakes: stakes,
+                referee_email: verifier
             });
             this.set.add(c);
             c.save();
