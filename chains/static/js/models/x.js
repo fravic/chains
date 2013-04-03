@@ -5,7 +5,7 @@ $(function($) {
 
     app.X = Backbone.RelationalModel.extend({
         idAttribute: 'id',
-        url: '/api/v1/x/',
+        url: 'http://dontbreakthechain.herokuapp.com/api/v1/x/',
 
         initialize: function(a) {
             this.day = a["day"];
