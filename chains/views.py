@@ -15,7 +15,7 @@ def charge(request, image_id, template_name="charge.html"):
 
     stripe.Charge.create(
         amount=int(chain.stakes * 100), # in cents
-        currency="usd",
+        currency="cad",
         customer=User.objects.get(pk=3).get_profile().customer_id,
     )
 
