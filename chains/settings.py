@@ -82,6 +82,12 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 )
 
+#S3
+DEFAULT_FILE_STORAGE = 'libs.storages.S3Storage.S3Storage'
+AWS_SECRET_ACCESS_KEY = 'AKIAJ4Z5HPVQSZFGFEUQ'
+AWS_ACCESS_KEY_ID = 'e3o50gZ6PLiLvaeeuaYw/Gf4lMgqSbWXPgAxOA3t'
+AWS_STORAGE_BUCKET_NAME = 'dont_break_the_chain'
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

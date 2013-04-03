@@ -15,12 +15,13 @@ def create_profile(sender, **kw):
 
 post_save.connect(create_profile, sender=User)
 
+class Image(models.Model):
+    image = models.ImageField(upload_to='images')
+
 class Chain(models.Model):
     name = models.CharField(max_length=255)
     stakes = models.PositiveIntegerField()
     referee_email = models.EmailField()
-    # desc
-    # skip
 
     def __unicode__(self):
         return self.name

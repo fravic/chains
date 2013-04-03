@@ -1,10 +1,25 @@
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
+from django import forms
 
 from tokenapi.http import JsonResponse
 
+from chains.models import Image
+
 import stripe
+
+class ImageForm(forms.ModelForm):
+    class Meta:
+        model = Image
+
+def upload(request):
+    form = ImageForm(request.POST, request.FILES)
+
+    if form.is_valid():
+        form.save()
+
+    return JsonResponse({})
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')

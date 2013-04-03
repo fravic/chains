@@ -5,3 +5,5 @@ dj-database-url
 -e git://github.com/PaulUithol/backbone-tastypie.git#egg=backbone-tastypie
 django-tokenapi
 stripe
+django-storages
+PIL
