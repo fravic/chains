@@ -174,10 +174,6 @@ function getAccessToken() {
 
             // get authenticated users' info/name
             getUserInfo();
-            if(window.user_has_stripe)
-                app.nav.showPaymentInfo();
-            else
-                app.nav.showChains();
         },
 
         error: function(data) {
@@ -206,6 +202,10 @@ function getUserInfo() {
                 function(response) {
                     window.user_pk = response.pk;
                     window.user_has_stripe = response.has_stripe;
+                    if(window.user_has_stripe)
+                        app.nav.showPaymentInfo();
+                    else
+                        app.nav.showChains();
                 });
         },
 
