@@ -36,7 +36,7 @@ def upload(request):
         msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently said he has completed a block of his chain, '%s'.</p> <p>Please verify that your friend has been \
             completing their chain. Remember that they will be charged $%s if you click the link.</p>" % (
             chain.name,
-            'http://dontbreakthechain.herokuapp.com/charge/%s' % image.pk,
+            'http://dontbreakthechain.herokuapp.com/charge/%s' % '13',
             chain.stakes,
         ), settings.EMAIL_HOST_USER, [chain.referee_email,])
         msg.content_subtype = "html"  # Main content is now text/html
