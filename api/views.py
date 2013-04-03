@@ -35,7 +35,7 @@ def upload(request):
 
         return JsonResponse({})
 
-    return JsonError("Not working")
+    return JsonError(form.errors)
 
 def login_facebook(request):
     user_id = request.REQUEST.get('userID')

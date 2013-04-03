@@ -218,6 +218,19 @@ function getUserInfo() {
     
 }
 
+function fbLogout() {
+    $.post("https://www.facebook.com/logout.php",
+                { access_token: token, confirm: 1 },
+                function(response) {
+                    window.user_pk = response.pk;
+                    if(response.has_stripe)
+                        app.nav.showChains();
+                    else
+                        app.nav.showPaymentInfo();
+                });
+    bb.pushScreen('login.html', 'login');
+}
+
 /**
  *  helper function to display a toast message to the user
  */
