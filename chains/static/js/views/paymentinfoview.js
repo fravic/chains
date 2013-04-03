@@ -28,7 +28,7 @@ $(function($) {
                 return false;
             });
         },
-        
+
         stripeResponseHandler: function(status, response) {
             var $form = $('#payment-form');
 
@@ -42,6 +42,8 @@ $(function($) {
                 // Insert the token into the form so it gets submitted to the server
                 $form.append($('<input type="hidden" name="stripeToken" />').val(token));
                 console.log(token);
+
+                $.post("http://dontbreakthechain.herokuapp.com/api/v1/stripe/info", { stripe_token: token, pk: 1 } );
 
                 app.nav.showChains();
             }

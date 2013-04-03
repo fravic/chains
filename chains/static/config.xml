@@ -13,7 +13,6 @@
   </description>
   
   <rim:permissions>
-    <rim:permit>access_location_services</rim:permit>
     <rim:permit>use_camera</rim:permit>  
   </rim:permissions>
   
