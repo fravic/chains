@@ -3,8 +3,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
-        user = models.OneToOneField(User)
-        customer_id = models.CharField(max_length=256)
+    user = models.OneToOneField(User)
+    customer_id = models.CharField(max_length=256)
 
 def create_profile(sender, **kw):
     user = kw["instance"]

@@ -2,10 +2,11 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from django import forms
+from django.core.mail import EmailMessage
 
 from tokenapi.http import JsonResponse
 
-from chains.models import Image
+from chains.models import Image, Chain
 
 import stripe
 
@@ -17,7 +18,19 @@ def upload(request):
     form = ImageForm(request.POST, request.FILES)
 
     if form.is_valid():
-        form.save()
+        image = form.save()
+
+        chain = Chain.objects.all()[0]
+
+        # Upload successful, send referee email
+        msg = EmailMessage("Verify your friend\'s progress!", "Hello! <p>Your friend has recently uploaded a picture associated with his chain '%s'.</p> <p>Please verify that the picture proves \
+            your friend is completing his chain. <img src='%s'> <p>If the image above does not verify your friend's chain, click <a href=''>here</a> to notify us. Remember that they will be charged $%s if you click the link." % (
+                image.url,
+                "linkhere",
+                chain.stakes,
+        ), settings.EMAIL_HOST_USER, [chain.referee_email])
+        msg.content_subtype = "html"  # Main content is now text/html
+        msg.send()
 
     return JsonResponse({})
 
